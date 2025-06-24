@@ -1,12 +1,13 @@
 type counterProps = {
     value: number,
+    color: string
 }
 
-const Counter = ({value}:counterProps) => {
+const Counter = ({value,color}: counterProps) => {
 
     return (
         <div>
-            <h1>{value}</h1>
+            <h1 style={{color: color}}>{value}</h1>
         </div>
     );
 };

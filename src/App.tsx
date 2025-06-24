@@ -17,7 +17,7 @@ function App() {
     return (
         <>
             <div>
-                <Counter value={count}></Counter>
+                {count > 0 ? <Counter value={count} color={'blue'}></Counter> : <Counter value={count} color={'red'}></Counter>}
             </div>
             <button onClick={increment}>+</button>
             <button onClick={decrement}>-</button>
